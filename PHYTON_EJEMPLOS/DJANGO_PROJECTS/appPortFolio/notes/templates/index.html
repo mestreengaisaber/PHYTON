@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+ <!--- <head>
+    <title>Notas</title>
+  </head>
+  <body>
+    <h1>Notas</h1>
+    {% for note in note_list %}
+      <h2>{{ note.title }}</h2>
+      <p>{{ note.content }}</p>
+    {% endfor %}
+  </body>-->
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .portfolio-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    
+      
+    <header>
+        <h1>{% for notep in portfolio %}
+            <p>{{ notep.content }}</p>
+          {% endfor %}</h1>
+    </header>
+
+    <section class="portfolio-item">
+      
+        <h2>{% for notepr in proyecto1 %}
+            <h1>{{ notepr.content }}</h1>
+            <p>{{ notepr.content2 }}</p>
+          {% endfor %}</h2>
+          
+        <h1>Notas</h1>
+        <h2>{{ note1.title }}</h2>
+        {% for note in filtro_note %}
+          <p>{{ note.title }}</p>
+          <p>{{ note.content }}</p>
+        {% endfor %}
+        <img src="ruta_de_tu_primera_imagen.jpg" alt="Proyecto 1">
+        <p>Descripción del primer proyecto.</p>
+    </section>
+
+    <section class="portfolio-item">
+        <h2>Proyecto 2</h2>
+        <img src="ruta_de_tu_segunda_imagen.jpg" alt="Proyecto 2">
+        <p>Descripción del segundo proyecto.</p>
+    </section>
+
+    <section class="portfolio-item">
+        <h2>Proyecto 3</h2>
+        <img src="ruta_de_tu_tercera_imagen.jpg" alt="Proyecto 3">
+        <p>Descripción del tercer proyecto.</p>
+    </section>
+
+</body>
+</html>
