@@ -29,3 +29,4 @@ def index(request):
     }
     response = render(request, template, context)
     return response
+

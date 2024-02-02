@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import datetime
 
 # Create your models here.
 
@@ -10,3 +11,9 @@ class Note(models.Model):
     
     def __str__(self):
         return self.title
+
+    # Create your models here.
+ 
+
+
+    
